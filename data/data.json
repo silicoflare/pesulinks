@@ -1,0 +1,9 @@
+{
+    "links": [
+        {
+            "name": "random",
+            "endpoint": "/random",
+            "link": "https://youtu.be/dQw4w9WgXcQ"
+        }
+    ]
+}

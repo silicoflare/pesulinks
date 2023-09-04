@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect
 
 app = Flask(__name__)
 
@@ -6,6 +6,9 @@ app = Flask(__name__)
 def home():
     return 'Hello, World!'
 
-@app.route('/about')
-def about():
-    return 'About'
+@app.route('/random')
+def random():
+    return redirect("https://youtu.be/dQw4w9WgXcQ")
+
+if __name__ == "__main__":
+    app.run(debug=True)
